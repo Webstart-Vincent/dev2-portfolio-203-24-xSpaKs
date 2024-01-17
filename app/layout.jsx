@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "../components/provider";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,39 @@ export default function RootLayout({ children }) {
     return (
         <html lang="fr-FR">
             <body className={inter.className}>
-                <Provider>{children}</Provider>
+                <Provider>
+                    <nav className="block p-4 text-center bg-slate-950 sm:justify-between sm:flex sm:p-6">
+                        <Link href="/">
+                            <p className="font-light text-textHoverColor whitespace-nowraptext-center font-mono">
+                                ARAN HIBLOT
+                            </p>
+                        </Link>
+
+                        <div className="flex justify-between mt-[13px] gap-5 sm:mt-0 sm:gap-8">
+                            <Link href="portfolio">
+                                <p className="text-textColor hover:text-textHoverColor transition-color duration-300 font-light whitespace-nowrap text-sm sm:text-base font-mono">
+                                    Portfolio
+                                </p>
+                            </Link>
+                            <Link href="skills">
+                                <p className="text-textColor hover:text-textHoverColor transition-color duration-300 font-light whitespace-nowrap text-sm sm:text-base font-mono">
+                                    Skills
+                                </p>
+                            </Link>
+                            <Link href="about">
+                                <p className="text-textColor hover:text-textHoverColor transition-color duration-300 font-light whitespace-nowrap text-sm sm:text-base font-mono">
+                                    About
+                                </p>
+                            </Link>
+                            <Link href="contact">
+                                <p className="text-textColor hover:text-textHoverColor transition-color duration-300 font-light whitespace-nowrap text-sm sm:text-base sm:mr-[30px] font-mono">
+                                    Contact
+                                </p>
+                            </Link>
+                        </div>
+                    </nav>
+                    {children}
+                </Provider>
             </body>
         </html>
     );
