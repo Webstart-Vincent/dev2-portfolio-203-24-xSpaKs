@@ -16,21 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## The project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The goal of the project was to create a personal and professional portfolio, that we will keep for the future.
 
-## Learn More
+There are multiple features :
 
-To learn more about Next.js, take a look at the following resources:
+-   The _home_ page, introducing visitors to me and my most recent works
+-   The _portfolio_ page, referencing all the works that I have done
+-   The _skills_ page, showing off every programming technology that I am able to use
+-   The _about_ page, to know more about me and my journey
+-   The _contact_ page, if visitors want to contact me
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## The technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The project was coded using React for the front-end, Next.js for the back-end, and the framework Tailwind for the CSS
