@@ -11,6 +11,10 @@ import green from "/assets/green.jpg";
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Home</title>
+                <meta property="og:title" content="My page title" key="title" />
+            </Head>
             <div className="bg-slate-950 h-[100vh] pt-10">
                 <div>
                     <h1 className="text-[20px] font-mono text-center text-textColor font-light sm:pl-[8%] sm:text-[26px] sm:text-left">
