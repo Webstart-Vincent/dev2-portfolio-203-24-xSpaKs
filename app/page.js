@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Frame from "../components/Frame";
 import Head from "next/head";
@@ -8,12 +6,16 @@ import red from "/assets/red.jpg";
 import blue from "/assets/blue.jpg";
 import green from "/assets/green.jpg";
 
+export const metadata = {
+    title: "Portfolio",
+    description: "Portfolio website of Aran Hiblot",
+};
+
 export default function Home() {
     return (
         <>
             <Head>
-                <title>Home</title>
-                <meta property="og:title" content="My page title" key="title" />
+                <title>Portfolio</title>
             </Head>
             <div className="bg-slate-950 h-[100vh] pt-10">
                 <div>
