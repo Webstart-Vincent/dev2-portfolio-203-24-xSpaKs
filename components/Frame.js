@@ -2,9 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Frame = ({ href, src, alt }) => {
+const Frame = ({ href, src, alt, width }) => {
     return (
-        <Link href={href} className={`rounded w-[300px] h-[auto] aspect-video`}>
+        <Link
+            href={href}
+            className={`rounded w-[${width}] h-[auto] aspect-video`}
+        >
             <Image src={src} alt={alt} />
         </Link>
     );
