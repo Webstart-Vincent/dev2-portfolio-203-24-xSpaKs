@@ -1,5 +1,4 @@
-"use client";
-import { useSession } from "next-auth/react";
+import Head from "next/head";
 
 export const metadata = {
     title: "Contact",
@@ -7,8 +6,7 @@ export const metadata = {
     favicon: "icon.ico",
 };
 
-const Dashboard = () => {
-    const { data: session, status } = useSession();
+export default function About() {
     return (
         <>
             <Head>
@@ -16,10 +14,7 @@ const Dashboard = () => {
                 <meta name="description" content={metadata.description} />
                 <link rel="icon" href={metadata.favicon} />
             </Head>
-            <h1>Tableau de bord</h1>
-            <p>Utilisateur : {session?.user.name ?? "Pas de session"}</p>
+            <div className="bg-mainColor min-h-[100vh]"></div>
         </>
     );
-};
-
-export default Dashboard;
+}
