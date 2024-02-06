@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## URL of the project deployed with Netlify : https://deft-crepe-c9350c.netlify.app/
+## URL of the project deployed with Netlify : https://aran-hiblot-portfolio.netlify.app/
 
 ## Getting Started
 
