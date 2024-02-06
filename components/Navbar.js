@@ -11,7 +11,7 @@ const Navbar = () => {
                 </p>
             </Link>
 
-            <div className="flex justify-between mt-[13px] gap-5 sm:mt-0 sm:gap-8">
+            <div className="flex justify-evenly mt-[13px] gap-5 sm:mt-0 sm:gap-8">
                 <NavLink name="Gallery" />
                 <NavLink name="Skills" />
                 <NavLink name="About" />
