@@ -18,7 +18,7 @@ const Frame = ({ href, src, alt, width }) => {
                     Titre du projet
                 </p>
             </div>
-            <p className="hidden text-center absolute top-[30px]  text-sm bottom-0 font-mono leading-6 p-1 text-secondaryColor group-hover/projet:block bg-black/60 overflow-y-scroll">
+            <p className="hidden text-center absolute top-[30px] w-[100%] text-sm bottom-0 font-mono leading-6 p-1 text-secondaryColor group-hover/projet:block bg-black/60 overflow-y-scroll">
                 Voici mon projet de Portfolio qui a pour but
             </p>
         </Link>
