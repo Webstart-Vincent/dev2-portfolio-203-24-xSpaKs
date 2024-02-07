@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Frame from "../components/Frame";
-import Head from "next/head";
 
 import blue from "/assets/blue.jpg";
 
@@ -13,11 +12,6 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>{metadata.title}</title>
-                <meta name="description" content={metadata.description} />
-                <link rel="icon" href={metadata.favicon} />
-            </Head>
             <div className="bg-mainColor min-h-[100vh] pt-10">
                 <div>
                     <h1 className="text-[20px] font-mono text-center text-secondaryColor font-light sm:pl-[8%] sm:text-[26px] sm:text-left">

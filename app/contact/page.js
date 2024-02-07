@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 export const metadata = {
     title: "Contact",
     description: "Portfolio website of Aran Hiblot",
@@ -9,11 +7,6 @@ export const metadata = {
 export default function Contact() {
     return (
         <>
-            <Head>
-                <title>{metadata.title}</title>
-                <meta name="description" content={metadata.description} />
-                <link rel="icon" href={metadata.favicon} />
-            </Head>
             <div className="bg-mainColor min-h-[100vh]"></div>
         </>
     );
