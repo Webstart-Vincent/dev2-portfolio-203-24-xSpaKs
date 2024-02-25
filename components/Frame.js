@@ -6,7 +6,7 @@ const Frame = ({ href, src, alt, width }) => {
     return (
         <Link
             href={href}
-            className={`relative rounded m-w-[${width}]  aspect-video group/projet overflow-hidden`}
+            className={`relative rounded max-w-[350px] group/projet overflow-hidden m-auto`}
         >
             <Image src={src} alt={alt} />
 

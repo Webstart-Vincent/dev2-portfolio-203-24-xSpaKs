@@ -4,7 +4,10 @@ import NavLink from "./NavLink";
 
 const Navbar = () => {
     return (
-        <nav className="block p-4 text-center bg-mainColor sm:justify-between sm:flex sm:p-6">
+        <nav
+            className="block p-4 text-center bg-mainColor sm:justify-between sm:flex sm:p-6
+        border-b-[1px] border-detailsColor/90"
+        >
             <Link href="/">
                 <p className="font-light text-detailsColor whitespace-nowraptext-center font-mono">
                     ARAN HIBLOT

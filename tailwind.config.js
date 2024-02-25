@@ -14,6 +14,7 @@ module.exports = {
             },
             colors: {
                 mainColor: "rgb(2 6 23)",
+                lightMainColor: "rgb(2 6 50)",
                 secondaryColor: "white",
                 detailsColor: "gold",
             },

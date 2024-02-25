@@ -21,23 +21,18 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="px-[20px]">
-                    <div className="w-[50%] m-auto mt-[30px] sm:flex sm:w-auto sm:justify-center sm:mt-[80px] sm:space-x-3  lg:space-x-10 ">
+                    <div className="max-w-[350px] sm:max-w-none grid grid-cols-1 gap-5 w-fit m-auto mt-[30px] sm:flex sm:mt-[80px] sm:space-x-3  lg:space-x-10 ">
                         <Frame
-                            href=""
+                            className=""
+                            href="project"
                             src={blue}
                             alt="Projet 1"
                             width="300px"
                         />
                         <Frame
-                            href=""
+                            href="project"
                             src={blue}
                             alt="Projet 2"
-                            width="300px"
-                        />
-                        <Frame
-                            href=""
-                            src={blue}
-                            alt="Projet 3"
                             width="300px"
                         />
                     </div>
