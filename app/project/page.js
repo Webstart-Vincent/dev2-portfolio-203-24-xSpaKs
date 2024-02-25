@@ -74,21 +74,21 @@ export default function Home() {
                 <p className="font-mono m-auto text-secondaryColor pt-[30px] max-w-[1000px]">
                     Dans un monde en constante évolution où la technologie joue
                     un rôle de plus en plus important dans notre quotidien, il
-                    est essentiel d'explorer de nouvelles façons d'interagir
-                    avec notre environnement numérique. La RA et la RV offrent
-                    un potentiel énorme pour transformer la manière dont nous
+                    est essentiel dexplorer de nouvelles façons dinteragir avec
+                    notre environnement numérique. La RA et la RV offrent un
+                    potentiel énorme pour transformer la manière dont nous
                     percevons et interagissons avec le monde qui nous entoure.
                 </p>
                 <p className="font-mono m-auto text-secondaryColor pt-[30px] max-w-[1000px]">
                     Notre objectif principal est de développer une plateforme de
                     RA/RV polyvalente et conviviale qui puisse être utilisée
                     dans une variété de contextes, allant du divertissement à
-                    l'éducation en passant par la formation professionnelle.
-                    Nous visons également à créer un écosystème robuste
-                    d'applications et de contenus pour soutenir cette plateforme
-                    et à établir des partenariats stratégiques avec des
-                    développeurs, des créateurs de contenu et des entreprises
-                    pour stimuler l'adoption et la croissance de notre solution.
+                    léducation en passant par la formation professionnelle. Nous
+                    visons également à créer un écosystème robuste dapplications
+                    et de contenus pour soutenir cette plateforme et à établir
+                    des partenariats stratégiques avec des développeurs, des
+                    créateurs de contenu et des entreprises pour stimuler
+                    ladoption et la croissance de notre solution.
                 </p>
             </div>
         </>
