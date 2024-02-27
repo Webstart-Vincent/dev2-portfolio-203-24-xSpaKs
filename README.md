@@ -25,7 +25,7 @@ The goal of the project was to create a personal and professional portfolio, tha
 There are multiple features :
 
 -   The _home_ page, introducing visitors to me and my most recent works
--   The _portfolio_ page, referencing all the works that I have done
+-   The _gallery_ page, referencing all the works that I have done
 -   The _skills_ page, showing off every programming technology that I am able to use
 -   The _about_ page, to know more about me and my journey
 -   The _contact_ page, if visitors want to contact me
