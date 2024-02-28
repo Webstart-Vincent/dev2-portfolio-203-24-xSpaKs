@@ -5,16 +5,19 @@ import { useRouter } from "next/navigation";
 const Dashboard = () => {
     const { data: session, status } = useSession();
     const router = useRouter();
-    if (!session) {
+
+    if (status == "unauthenticated") {
         router.push("/");
     }
 
-    return (
-        <>
-            <h1>Tableau de bord</h1>
-            <p>Utilisateur : {session?.user.name ?? "Pas de session"}</p>
-        </>
-    );
+    if (status == "authenticated") {
+        return (
+            <>
+                <h1>Tableau de bord</h1>
+                <p>Utilisateur : {session?.user.name ?? "Pas de session"}</p>
+            </>
+        );
+    }
 };
 
 export default Dashboard;
