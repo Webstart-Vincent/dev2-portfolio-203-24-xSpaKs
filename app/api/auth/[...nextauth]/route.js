@@ -19,7 +19,10 @@ const authOptions = {
 
     callbacks: {
         async signIn({ user: { email } }) {
-            return email === process.env.EMAIL_ADMIN;
+            return (
+                email === process.env.EMAIL_ADMIN ||
+                email === process.env.EMAIL_PROF
+            );
         },
 
         async redirect({ url, baseUrl }) {
