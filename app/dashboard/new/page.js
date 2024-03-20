@@ -47,7 +47,7 @@ const New = () => {
                     <h1 className="text-2xl text-secondaryColor text-center pb-7">
                         Create a new project
                     </h1>
-                    <form action={""} method="post" onSubmit={handleFormSubmit}>
+                    <form onSubmit={handleFormSubmit}>
                         <div className="text-center text-secondaryColor mb-[30px]">
                             <label>Date of the project</label>
                             <input
