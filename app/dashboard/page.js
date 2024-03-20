@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import dbConnect from "../../lib/mongodb.js";
+import { dbConnect } from "../../lib/mongodb.js";
 
 import { getServerSession } from "next-auth";
 import { authOptions } from "../api/auth/[...nextauth]/route.js";
