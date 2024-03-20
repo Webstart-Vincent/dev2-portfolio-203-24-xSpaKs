@@ -31,11 +31,11 @@ const New = () => {
         // if (createdWork) router.push("/dashboard");
     };
 
-    if (status == "unauthenticated") {
-        router.push("/");
-    }
+    // if (status == "unauthenticated") {
+    //     router.push("/");
+    // }
 
-    if (status == "authenticated") {
+    if (true) {
         return (
             <>
                 <div className="font-mono bg-mainColor min-h-[100vh] p-5 sm:p-10">
