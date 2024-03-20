@@ -1,7 +1,7 @@
 "use server";
 
-import WorkModel from "../models/work-model.js";
-import { dbConnect } from "../lib/mongodb.js";
+import WorkModel from "@/models/work-model.js";
+import { dbConnect } from "@/lib/mongodb.js";
 
 export const createWork = async (work) => {
     try {

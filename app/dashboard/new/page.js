@@ -25,13 +25,10 @@ const New = () => {
         setDescription(event.target.value);
     };
 
-    const handleCreateButton = async () => {
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
         await createWork({ title, slug, description });
         // if (createdWork) router.push("/dashboard");
-    };
-
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
     };
 
     if (status == "unauthenticated") {
@@ -98,7 +95,6 @@ const New = () => {
                             className="pt-[10px] text-secondaryColor block m-auto cursor-pointer hover:text-detailsColor transition:color duration-300"
                             type="submit"
                             value={"Add the project"}
-                            onClick={handleCreateButton}
                         ></input>
                     </form>
                 </div>
