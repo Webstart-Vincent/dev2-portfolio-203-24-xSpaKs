@@ -25,9 +25,9 @@ const New = () => {
         setDescription(event.target.value);
     };
 
-    const handleFormSubmit = async (event) => {
+    const handleFormSubmit = (event) => {
         event.preventDefault();
-        await createWork({ title, slug, description });
+        createWork({ title, slug, description });
         // if (createdWork) router.push("/dashboard");
     };
 
