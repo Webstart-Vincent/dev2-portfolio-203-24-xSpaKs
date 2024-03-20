@@ -2,8 +2,8 @@
 
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import WorkModel from "../../../models/work-model.js";
-import createWork from "../../../custom-hooks/create-work.js";
+import { createWork } from "../../../custom-hooks/create-work.js";
+import { useState } from "react";
 
 const New = () => {
     const { data: session, status } = useSession();
@@ -25,14 +25,9 @@ const New = () => {
         setDescription(event.target.value);
     };
 
-    const handleCreateButton = () => {
-        const work = new WorkModel({
-            title: title,
-            slug: slug,
-            description: description,
-        });
-
-        createWork(work);
+    const handleCreateButton = async () => {
+        const createdWork = await createWork({ title, slug, description });
+        router.push("/dashboard");
     };
 
     const handleFormSubmit = (event) => {

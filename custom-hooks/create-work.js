@@ -12,5 +12,6 @@ export const createWork = async (work) => {
         }
     } catch (error) {
         console.log(error);
+        return null;
     }
 };
