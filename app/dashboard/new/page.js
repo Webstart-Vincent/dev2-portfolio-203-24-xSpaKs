@@ -26,7 +26,7 @@ const New = () => {
     };
 
     const handleCreateButton = async () => {
-        const createdWork = await createWork({ title, slug, description });
+        await createWork({ title, slug, description });
         router.push("/dashboard");
     };
 
