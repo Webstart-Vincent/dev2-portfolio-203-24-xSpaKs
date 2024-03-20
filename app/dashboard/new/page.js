@@ -27,6 +27,7 @@ const New = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
+        console.log("je suis dans le handle");
         createWork({ title, slug, description });
         // if (createdWork) router.push("/dashboard");
     };
