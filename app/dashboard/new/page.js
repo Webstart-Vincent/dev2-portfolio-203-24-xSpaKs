@@ -25,11 +25,10 @@ const New = () => {
         setDescription(event.target.value);
     };
 
-    const handleFormSubmit = (event) => {
+    const handleFormSubmit = async (event) => {
         event.preventDefault();
-        console.log("je suis dans le handle");
-        console.log(createWork);
-        createWork(title, slug, description);
+        const newWork = await createWork(title, slug, description);
+        console.log(newWork);
         // if (createdWork) router.push("/dashboard");
     };
 
