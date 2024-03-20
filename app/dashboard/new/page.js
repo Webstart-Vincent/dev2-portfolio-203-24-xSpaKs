@@ -27,11 +27,12 @@ const New = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
+        console.log("event =>", event);
         try {
             const newWork = await createWork(title, slug, description);
-            console.log(newWork);
+            console.log("newwork => ", newWork);
         } catch (error) {
-            console.log(error);
+            console.log("error => ", error);
         }
         // if (createdWork) router.push("/dashboard");
     };
