@@ -27,7 +27,6 @@ const New = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-        console.log("event =>", event);
 
         const createdWork = await createWork(title, slug, description);
 
