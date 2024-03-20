@@ -1,9 +1,10 @@
-"use server";
+"use client";
 
 import WorkModel from "@/models/work-model.js";
 import { dbConnect } from "@/lib/mongodb.js";
 
 export const createWork = async (work) => {
+    console.log("avant try");
     try {
         await dbConnect();
         console.log("db connecté");
