@@ -26,8 +26,8 @@ const New = () => {
     };
 
     const handleCreateButton = async () => {
-        await createWork({ title, slug, description });
-        router.push("/dashboard");
+        const createdWork = await createWork({ title, slug, description });
+        if (createdWork) router.push("/dashboard");
     };
 
     const handleFormSubmit = (event) => {
