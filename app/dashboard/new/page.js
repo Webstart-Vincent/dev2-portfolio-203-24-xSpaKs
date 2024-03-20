@@ -28,20 +28,15 @@ const New = () => {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         console.log("event =>", event);
-        try {
-            const newWork = await createWork(title, slug, description);
-            console.log("newwork => ", newWork);
-        } catch (error) {
-            console.log("error => ", error);
-        }
-        // if (createdWork) router.push("/dashboard");
+
+        const createdWork = await createWork(title, slug, description);
+
+        if (createdWork) router.push("/dashboard");
     };
 
-    // if (status == "unauthenticated") {
-    //     router.push("/");
-    // }
+    if (status == "unauthenticated") router.push("/");
 
-    if (true) {
+    if (status == "authenticated") {
         return (
             <>
                 <div className="font-mono bg-mainColor min-h-[100vh] p-5 sm:p-10">
