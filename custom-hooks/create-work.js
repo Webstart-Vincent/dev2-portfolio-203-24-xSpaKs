@@ -2,7 +2,7 @@
 
 import WorkModel from "@/models/work-model.js";
 import { dbConnect } from "@/lib/mongodb.js";
-
+console.log("je suis dans le create");
 export const createWork = async (title, slug, description) => {
     try {
         await dbConnect();
